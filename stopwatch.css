@@ -1,0 +1,60 @@
+
+.stopwatch {
+  width: 300px;
+  background-color: #999;
+  border-radius: 5px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.75), 0px 0px 1px black;
+  padding: 15px;
+}
+.stopwatch, .stopwatch * {
+  transition: all 0.15s ease-out;
+}
+.stopwatch .controls {
+  display: flex;
+}
+.stopwatch .controls button {
+  flex-grow: 1;
+  margin: 0px 5px 4px;
+  border-radius: 5px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.75), 0px 0px 1px black;
+  border: 0px;
+  outline: 0px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.stopwatch .controls button:active {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  box-shadow: none;
+}
+.stopwatch .controls .start {
+  background-color: #5d5;
+}
+.stopwatch .controls .start:hover {
+  background-color: #7f7;
+}
+.stopwatch .controls .stop {
+  background-color: #d55;
+}
+.stopwatch .controls .stop:hover {
+  background-color: #e66;
+}
+.stopwatch .controls .reset {
+  background-color: #3ee;
+}
+.stopwatch .controls .reset:hover {
+  background-color: #7f7;
+}
+.stopwatch .display {
+  padding: 10px;
+  font-size: 65px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+.stopwatch .display :not(:last-child):after {
+  content: ':';
+}
+
